@@ -1,0 +1,14 @@
+follow chatgpt example but
+use the same webpack.config.js file in this folder 
+Don not add   <script src="./main.js"></script> to the index.html file because wepback will add a one automatically
+run npx webpack // this will create the dest folder we do not create it
+if no images needed scip the part eeded for images
+we can refere to odin project page 
+run npx webpack serve for testing live preview or npm run dev since we added it to the scripts
+
+webpack modes
+So far, we’ve stuck with using Webpack in development mode, which is naturally most suitable for when we’re working on development. However, when we come to build our projects for deployment, the dedicated production mode does some different optimizations for us. Try it! You can go to your Restaurant Page project, change the mode to "production" in webpack.config.js, then run your build command again. Have a look at the JavaScript bundle in dist to see an even more glorious jumble of characters!
+
+We really do not need to know exactly what optimizations have been applied, nor do we need to know about any other specifics of production mode, but it’s nice to be aware that the two modes exist and are designed for specific things.
+
+To save you from having to manually edit your configuration file every time you wish to switch modes, such as before bundling into dist or before going back to use your dev server, you can have two different configuration files (e.g. webpack.dev.js and webpack.prod.js), and then have your build and dev npm scripts specify which configuration files to use (omitting the --config option makes Webpack search for webpack.config.js by default):

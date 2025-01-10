@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c1d23;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  *{
+
+  }
+
+  .section{
+    flex-grow: 1;
+    display: flex;
+    
+  }
+
+  .section button{
+    color: rgb(232, 174, 133);
+
+  }
+ .cats{
+  flex-grow: 1/6;
+  border-left: solid  rgb(2, 43, 56) 5px;
+  padding-left: 9px;
+  display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 15px;
+    
+
+  }
+
+  .dates{
+    flex-grow: 1/6;
+    border-right: solid rgb(2, 43, 56)  5px;
+    padding-right: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 15px;
+
+
+  }
+  .main{
+    flex-grow: 1;
+  }
+header {
+  border: solid 5px rgb(2, 43, 56) ;
+  display: flex;
+
+  justify-content: space-around;
+}
+.container{
+  margin: 20px;
+  padding-top: 28px;
+  display: grid;
+  color: rgb(2, 43, 56) !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px; /* Optional: Add space between items */
+  flex-direction: column;
+  align-content: center;
+}
+#forma{
+  display: block;
+}
+#form{
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  row-gap: 10px;
+  justify-content: center;
+  text-align:justify;
+  text-justify: auto;
+}
+/* .form-group{
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center; */
+
+/*} */
+
+.addDiv{
+  background-color: #d6dbdbcb;
+  display: flex;
+  justify-content: center;
+  height:390px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.addDiv button{
+  color: rgb(4, 89, 115) !important;
+  font-size: larger;
+
+}
+.collection{
+  display: flex;
+  justify-content: space-around;
+}
+.collection button span{
+  color: rgb(4, 89, 115) !important;
+  font-size: 20px;
+
+
+}
+  #form,.task {
+  max-width: 500px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  background-color: #d6dbdbcb;
+  color: rgb(4, 89, 115) !important;
+
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  }
+  #form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  .form-group {
+  margin-bottom: 15px;
+  }
+  .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  .form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+  .form-group input[type="submit"] {
+  background-color: rgb(213, 162, 125);
+  color: rgb(4, 89, 115) !important;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  }
+  .form-group input[type="submit"]:hover {
+  background-color: rgb(134, 80, 41);
+  }
+  .error {
+  color: red;
+  margin-top: 5px;
+  }
+
+  button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+
+  }
+  button:hover{
+    cursor:pointer;
+
+
+    
+  }
+
+  #cancle{
+    background-color: rgb(144, 143, 143);
+    color: rgb(4, 89, 115) !important;
+    cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  }
+
+  #cancle:hover {
+    background-color: #383838;
+    color: aliceblue;
+    }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #d6dbdbcb;
+    color: rgb(148, 62, 9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  }
+
+  .td{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* background-color: #09161dc6; */
+    color: rgb(148, 62, 9);
+    padding: 4px;
+
+  }
+
+  .allButtons{
+    display: flex;
+    gap: 1px;
+    padding-left: 3px;
+    /* background-color: #09161dc6; */
+    color: rgb(148, 62, 9);
+
+
+
+  }
+  .cat{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* color: rgb(148, 62, 9); */
+
+
+  }
+
+.material-symbols-outlined {
+ font-size: 15px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 50,
+  'GRAD' 0,
+  'opsz' 10,
+}
+
+/* span{
+  width: 1px;
+  height: 1px;
+} */
+
+.info button{
+  color: rgb(4, 89, 115) !important;
+  
+
+}
+.allButtons{
+  display: flex;
+  justify-content: center;
+}
+.allButtons button span{
+  color: rgb(4, 89, 115) !important;
+
+}
+
+
+.final{
+  font-size: larger;
+}
+.line{
+  text-decoration: line-through;
+}
+
+.task{
+  display: grid;
+  grid-template-rows: repeat(5,18%);
+}
+
